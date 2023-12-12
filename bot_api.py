@@ -10,7 +10,7 @@ suma_ks = '{:,}'.format(round(suma_ks, 2)).replace(",", " ")
 suma_for = '{:,}'.format(round(suma_for, 2)).replace(",", " ")
 suma_dor = '{:,}'.format(round(suma_dor, 2)).replace(",", " ")
 
-
+#забыл что комменты в питоне такие)))
 @dp.message_handler (commands = 'start')
 async def start(message: Message):
     await message.answer(f'Общая сумма КС-2: {suma_ks} руб.\nСумма КС-2 до выверки: {suma_for}руб.\nНа доработке: {suma_dor}руб.')
